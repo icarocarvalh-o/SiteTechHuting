@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tech Huntig - Chamados</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/tabelaChamado.css">
+        <link rel="stylesheet" href="css/chamadosClientes.css">
+    </head>
+    <body>
+        <header>
+            <div class="caixa">
+                <h1><img src="img/LogoSIS.png" alt="Logo da SIS"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Dashboard</a></li>
+                        <li><a href="chamadosClientes.html">Chamados</a></li>
+                        <li><a href="loginCorporativo.html">Sair</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+        <section>
+            <table>
+                <thead>
+                    <tr class="tabela-chamado">
+                        <th>Código</th>
+                        <th>Assunto</th>
+                        <th>Urgência</th>
+                        <th>Responsável</th>
+                        <th>Cadastrado</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-chamados">
+                    <tr class="detalhe-chamado">
+                        <td class="info-codigo">56</td>
+                        <td class="info-assunto">Criação de Vaga</td>
+                        <td class="info-urgencia">Alta</td>
+                        <td>Joana Monteiro</td>
+                        <td class="info-data">18/08/2022</td>
+                    </tr>
+                    <tr class="detalhe-chamado">
+                        <td class="info-codigo">56</td>
+                        <td class="info-assunto">Criação de Vaga</td>
+                        <td class="info-urgencia">Alta</td>
+                        <td>Joana Monteiro</td>
+                        <td class="info-data">18/08/2022</td>
+                    </tr>
+                    <tr class="detalhe-chamado">
+                        <td class="info-codigo">56</td>
+                        <td class="info-assunto">Criação de Vaga</td>
+                        <td class="info-urgencia">Alta</td>
+                        <td>Joana Monteiro</td>
+                        <td class="info-data">18/08/2022</td>
+                    </tr>
+                    <tr class="detalhe-chamado">
+                        <td class="info-codigo">56</td>
+                        <td class="info-assunto">Criação de Vaga</td>
+                        <td class="info-urgencia">Alta</td>
+                        <td>Joana Monteiro</td>
+                        <td class="info-data">18/08/2022</td>
+                    </tr>
+                    <tr class="detalhe-chamado">
+                        <td class="info-codigo">56</td>
+                        <td class="info-assunto">Criação de Vaga</td>
+                        <td class="info-urgencia">Alta</td>
+                        <td>Joana Monteiro</td>
+                        <td class="info-data">18/08/2022</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <button id="abrir-modal" class="abrir-chamado">Abrir um novo chamado</button>
+        <div id="fade" class="hide"></div>
+        <div id="modal" class="hide">
+            <div class="modal-header">
+                <h2>Insira os dados para o seu chamado</h2>
+                <button id="close-modal" class="cancelar-chamado">Cancelar chamado</button>
+            </div>
+            <div id="modal-body">
+                <form id="form-chamado">
+                    <div class="selecionar-assunto">
+                        <label for="nome">Assunto:</label>
+                        <select name="assunto-chamado" id="assunto">
+                            <option value="assunto-chamado">Selecione o assunto do chamado</option>
+                            <option value="assunto-chamado">Criação de vaga/Adicionar vaga</option>
+                            <option value="assunto-chamado">Duvidas</option>
+                            <option value="assunto-chamado">Cancelamento de vaga</option>
+                        </select>
+                    </div>
+                    <div class="selecionar-urgencia">
+                        <label for="peso">Urgência:</label>
+                        <select name="urgencia-chamado" class="urgencia-chamado" id="urgencia">
+                            <option value="urgencia-chamado">Selecione a urgência do chamado</option>
+                            <option value="urgencia-chamado">Baixa</option>
+                            <option value="urgencia-chamado">Média</option>
+                            <option value="urgencia-chamado">Alta</option>
+                            <option value="urgencia-chamado">Urgente</option>
+                        </select>
+                    </div>
+                    <div class="descricao-chamado">
+                        <textarea name="descricao-chamado" cols="85" rows="10" placeholder="Digite o motivo da abertura do chamado"></textarea>
+                    </div>
+                    <button id="close-modal" class="enviar-chamado">Enviar chamado</button>
+                </form>
+            </div>
+        </div>
+    </main>
+        <script src="script/chamadosClientes.js" defer></script> <!--defer para o script iniciar depois do DOM-->
+    </body>
+</html>
+
+
+
+
+
+
