@@ -1,0 +1,43 @@
+/* Style da agenda de compromissos do dia */
+
+.compromissos-hoje table {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.compromissos-hoje thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+.compromissos-hoje td, th {
+    border: 1px solid black;
+    padding: 8px 15px;
+}
+
+/* Style do calendário */
+
+.calendario table {
+    margin-top: 50px;
+    margin-left: 20px;
+    width: 97%;
+}
+
+.calendario thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+.calendario td {
+    border: 1px solid black;
+    padding: 52px 15px;
+    text-align: end;
+    max-width: 50px;
+    
+}
+
+.tarefa-concluida {
+    border-radius: 1px solid black;
+}

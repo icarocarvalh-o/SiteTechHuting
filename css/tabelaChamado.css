@@ -1,0 +1,46 @@
+/* CSS da tabela de chamados */
+
+table{
+	width: 96%;
+	margin: 20px 30px;
+    table-layout: fixed;
+}
+
+td, th {
+	padding: .7em;
+	margin: 0;
+	border: 1px solid #ccc;
+	text-align: center;
+    background-color: #FFFF;
+}
+
+th{
+	font-weight: bold;
+	background-color: #EEE;
+}
+
+button {
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 15px 32px;
+    cursor: pointer;
+}
+
+.abrir-chamado {
+    position: relative;
+    left: 40%;
+    margin-top: 10px;
+    background-color: #1d234b;
+}
+
+.cancelar-chamado {
+    background-color: #B80000;
+}
+
+.enviar-chamado {
+    margin-top: 1rem;
+    background-color: green
+}

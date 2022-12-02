@@ -1,0 +1,47 @@
+body{
+    background: #F2F2F2;
+}
+
+header {
+    background: #1d234b;
+}
+
+nav {
+    position: absolute;
+    top: 30px;
+    right: 3%;
+
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    color: #FFFFFF;
+    font-weight: bold; 
+    font-size: 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #C78C19;
+    transition: 500ms;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
