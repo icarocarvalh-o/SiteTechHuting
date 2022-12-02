@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tech Huntig - Dashboard</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <header>
+            <div class="caixa">
+                <h1><img src="img/LogoSIS.png" alt="Logo da SIS"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Dashboard</a></li>
+                        <li><a href="compromissos.html">Compromissos</a></li>
+                        <li><a href="vagas.html">Vagas</a></li>
+                        <li><a href="chamadosRH.html">Chamados</a></li>
+                        <li><a href="loginCorporativo.html">Sair</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+
+            <form>
+                <select name="escolha-empresa" class="filtrar-kanban">
+                    <option value="escolha-empresa">Selecione uma empresa</option>
+                    <option value="escolha-empresa">Natura</option>
+                    <option value="escolha-empresa">Bancon Pan</option>
+                    <option value="escolha-empresa">OdontoPrev</option>
+                </select>
+                <select name="escolha-vaga" class="filtrar-kanban">
+                    <option value="escolha-vaga">Selecionar uma vaga</option>
+                    <option value="escolha-vaga">Desenvolvedor</option>
+                    <option value="escolha-vaga">UX/UI</option>
+                    <option value="escolha-vaga">DBA</option>
+                </select>        
+            </form>
+            <!-- Criando o quadro Kanban-->
+            <div class="quadros">
+                <div class="quadro">
+                    <h3>Em Seleção</h3>
+                    <div class="dropzone">
+                        <div class="cartoes" draggable="true">
+                            <img src="img/1616524443087.jpg" class="foto-perfil"alt="Foto de candidato">
+                            <div class="content">Icaro Pereira De Carvalho</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="quadro">
+                    <h3>Testes</h3>
+                    <div class="dropzone">
+                        <div class="cartoes" draggable="true">
+                            <img src="img/fotomulher1.jpg" class="foto-perfil"alt="Foto de candidato">
+                            <div class="content">Maria Eduarda Procopio</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="quadro">
+                    <h3>Entrevistas</h3>
+                    <div class="dropzone">
+                        <div class="cartoes" draggable="true">
+                            <img src="img/fotohomem1.jpg" class="foto-perfil"alt="Foto de candidato">
+                            <div class="content">João Santos</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="quadro">
+                    <h3>Contratados</h3>
+                    <div class="dropzone">
+                        <div class="cartoes" draggable="true">
+                            <img src="img/fotohomem2.jpg" class="foto-perfil"alt="Foto de candidato">
+                            <div class="content">Everton Ribeiro</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="script/kanban.js"></script>
+
+    </body>
+</html>
