@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tech Huntig - Chamados</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/tabelaChamado.css">
+        <link rel="stylesheet" href="css/chamadosRH.css">
+    </head>
+    <body>
+        <header>
+            <div class="caixa">
+                <h1><img src="img/LogoSIS.png" alt="Logo da SIS"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Dashboard</a></li>
+                        <li><a href="compromissos.html">Compromissos</a></li>
+                        <li><a href="vagas.html">Vagas</a></li>
+                        <li><a href="chamadosRH.html">Chamados</a></li>
+                        <li><a href="loginCorporativo.html">Sair</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+        <section>
+            <table class="tabela">
+                <thead>
+                    <tr class="tabela-chamado">
+                        <th>Código</th>
+                        <th>Assunto</th>
+                        <th>Urgência</th>
+                        <th>Atendente</th>
+                        <th>Solicitante</th>
+                        <th>Cadastrado</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-chamados">
+                    <tr class="detalhe-chamado">
+                        <td class="info-codigo">56</td>
+                        <td class="info-assunto">Criação de Vaga</td>
+                        <td class="info-urgencia">Alta</td>
+                        <td>Joana Monteiro</td>
+                        <td>Carlos Eduardo</td>
+                        <td class="info-data">18/08/2022</td>
+                    </tr>
+                    <tr class="detalhe-chamado" id="interacao-chamado">
+                        <td class="info-codigo">56</td>
+                        <td class="info-assunto">Criação de Vaga</td>
+                        <td class="info-urgencia">Alta</td>
+                        <td id="alteracao-nome">Pendente</td>
+                        <td>Carlos Eduardo</td>
+                        <td class="info-data">18/08/2022</td>
+                    </tr>
+                    <tr class="detalhe-chamado">
+                        <td class="info-codigo">56</td>
+                        <td class="info-assunto">Criação de Vaga</td>
+                        <td class="info-urgencia">Alta</td>
+                        <td>Joana Monteiro</td>
+                        <td>Carlos Eduardo</td>
+                        <td class="info-data">18/08/2022</td>
+                    </tr>
+                    <tr class="detalhe-chamado">
+                        <td class="info-codigo">56</td>
+                        <td class="info-assunto">Criação de Vaga</td>
+                        <td class="info-urgencia">Alta</td>
+                        <td>Joana Monteiro</td>
+                        <td>Carlos Eduardo</td>
+                        <td class="info-data">18/08/2022</td>
+                    </tr>
+                    <tr class="detalhe-chamado">
+                        <td class="info-codigo">56</td>
+                        <td class="info-assunto">Criação de Vaga</td>
+                        <td class="info-urgencia">Alta</td>
+                        <td>Joana Monteiro</td>
+                        <td>Carlos Eduardo</td>
+                        <td class="info-data">18/08/2022</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <div class="detalhamento-chamado">
+            <div class="cabecalho-chamado">
+                <h2 class="titulo-detalhe">Detalhes do chamado</h2>
+                <button id="btn-fechar">Fechar</button>
+            </div>
+            <div class="informacoes-chamado">
+                <p>Solicitante: Carlos Eduardo</p>
+                <p>Data de abertura: 15/03/2023</p>
+                <p>Motivo: Abertura de vagas</p>
+            </div>
+            <div class="descricao-chamado">
+                <p>Descrição: Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aliquid in dolore asperiores ipsum, minus inventore, delectus mollitia illum, distinctio excepturi ullam sed pariatur placeat nemo hic. Dolore, quidem aliquam.</p>
+            </div>
+            <div class="botoes-chamado">
+                <button id="btn-atribuir">Atribuir atendente</button>
+                <button id="btn-cancelar">Cancelar chamado</button>
+                <button id="btn-finalizar">Finalizar chamado</button>
+            </div>
+        </div>
+    </main>
+    <script src="script/chamadosRH.js"></script>
+    </body>
+</html>
